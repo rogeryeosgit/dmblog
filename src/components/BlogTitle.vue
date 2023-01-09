@@ -15,7 +15,7 @@ export default {
     title() {
       if (this.filters.post) return `${this.subTitle} - Post`;
       if (this.filters.author) return `${this.subTitle} - Author`;
-      return `Feed - ${this.blogName}`;
+      return `${this.blogName}`;
     }
   },
 
