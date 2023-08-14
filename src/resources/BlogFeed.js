@@ -3,7 +3,7 @@ import _map from 'lodash.map'
 export default {
   feed() {
     return {
-      path: '/objects',
+      path: '/objects/posts',
       resolve: (response, mappers) => {
         let _posts = _map(response.objects, function(i) {
           let temp = {
