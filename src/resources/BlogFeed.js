@@ -6,7 +6,7 @@ export default {
       path: '/objects',
       resolve: (response, mappers) => {
         let _posts = _map(response.objects, function (i) {
-          if (i.type == 'posts') {
+          if (i.type === 'posts') {
             let entry = Object.entries(i)
             console.log(entry);
             let temp = {
