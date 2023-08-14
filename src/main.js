@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 
 Vue.use(resource, {
   resources,
-  endpoint: 'https://api.cosmicjs.com/v3/buckets/' + config.COSMIC_BUCKET
+  endpoint: 'https://api.cosmicjs.com/v1/' + config.COSMIC_BUCKET
 })
 
 Vue.use(deviceQueries, {
