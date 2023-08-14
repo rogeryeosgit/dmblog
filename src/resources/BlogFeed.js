@@ -6,9 +6,8 @@ export default {
       path: '/objects',
       resolve: (response, mappers) => {
         let _posts = _map(response.objects, function (i) {
-          for (x of i) {
-            console.log('Figuring out what is in i: ' + x);
-          }
+          let entry = Object.entries(i)
+          console.log(entry);
           let temp = {
             title: i.title,
             image: i.metadata.image.imgix_url,
