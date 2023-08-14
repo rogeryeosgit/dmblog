@@ -7,12 +7,10 @@ export const scrollTo = (pos, duration = 600, delay = 0) => new Promise(resolve 
   }, delay)
 })
 
-export const kebabify = (words) => {
-  console.log('WORDS:' + words)
+export const kebabify = (words) =>
   words
     .toLowerCase()
     .replace(' ', '-')
-}
 
 export const unkebabify = (str) => capitalize.words(str.replace(/-/g, ' '))
 
