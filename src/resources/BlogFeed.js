@@ -3,12 +3,12 @@ import _map from 'lodash.map'
 export default {
   feed() {
     return {
-      path: '/objects/posts',
+      path: '/objects',
       resolve: (response, mappers) => {
         let _posts = _map(response.objects, function(i) {
           let temp = {
             title: i.title,
-            image: i.metadata.image.imgix_url,
+            image: i.metadata.image.url,
             published: i.created_at,
             author: i.metadata.author.title,
             id: i.slug
